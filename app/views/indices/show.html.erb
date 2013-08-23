@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Home:</b>
+  <%= @index.home %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @index.user %>
+</p>
+
+<p>
+  <b>Nav:</b>
+  <%= @index.nav %>
+</p>
+
+<p>
+  <b>Main:</b>
+  <%= @index.main %>
+</p>
+
+
+<%= link_to 'Edit', edit_index_path(@index) %> |
+<%= link_to 'Back', indices_path %>
