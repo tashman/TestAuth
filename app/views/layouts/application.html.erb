@@ -46,12 +46,14 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </a>
-          <a class="brand" href="#">Rails3DeviseRspecCucumber</a>
+          <a class="brand" href="#">Tashman Test Auth App</a>
           <div class="container-fluid nav-collapse">
             <ul class="nav">
-              <li><%= link_to "Login", "users#sign_in"  %></li>
-              <li><%= link_to "Register", "users#new"  %></li>
-              <li><%= link_to "Logout", "users#sign_out"  %></li>
+              <li><%= link_to 'Login', new_user_session_path %></li>
+              <li> <%= link_to 'Register', new_user_registration_path %></li>
+              <li> <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
+              <li> <%= link_to 'Edit My Account', edit_user_registration_path %></li>
+              <li><%= link_to "User List", "users#edit" %></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div>
@@ -60,20 +62,11 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span3">
-          <div class="well sidebar-nav">
-            <ul class="nav nav-list">
-              <li class="nav-header">Aside</li>
-              <li><%= link_to "Something", "/path1"  %></li>
-              <li><%= link_to "Something else", "/path2"  %></li>
-              <li><%= link_to "The third thing", "/path3"  %></li>
-            </ul>
-          </div><!--/.well -->
-        </div><!--/span-->
-        <div class="span9">
+        <div class="span4">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
+
       </div><!--/row-->
 
       <footer>
