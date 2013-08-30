@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "RTestAuth" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "Tashman TestAuth" %></title>
     <%= csrf_meta_tags %>
 
     <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
@@ -53,7 +53,7 @@
               <li><%= link_to 'Login', new_user_session_path %></li>
               <li> <%= link_to 'Register', new_user_registration_path %></li>
               <li> <%= link_to 'Logout', destroy_user_session_path, :method=>'delete' %></li>
-              <li> <%= link_to 'Edit My Account', edit_user_registration_path %></li>
+              <li> <%= link_to 'Edit Account', edit_user_registration_path %></li>
               <li><%= link_to "User List", "users#edit" %></li>
             </ul>
           </div><!--/.nav-collapse -->
@@ -63,7 +63,7 @@
 
     <div class="container-fluid">
       <div class="row-fluid">
-        <div class="span4">
+        <div class="span6">
           <%= bootstrap_flash %>
           <%= yield %>
         </div>
@@ -71,7 +71,7 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Dan Tashman 2013</p>
+        <p>&copy; <a href="http://www.about.me/dantashman" target="_blank">Dan Tashman 2013</p>
       </footer>
 
     </div> <!-- /container -->

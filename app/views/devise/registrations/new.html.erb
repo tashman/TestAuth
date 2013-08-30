@@ -1,4 +1,4 @@
-<h2>Sign up</h2>
+<h2>Register an account</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
@@ -14,7 +14,7 @@
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>
 
-  <div><%= f.submit "Sign up" %></div>
+  <div><%= f.submit "Create Account", :class => "btn btn-primary btn-lg" %></div>
 <% end %>
 
-<%= render "devise/shared/links" %>
+<h4><%= render "devise/shared/links" %></h4>
