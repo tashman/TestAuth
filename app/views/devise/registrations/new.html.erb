@@ -1,15 +1,15 @@
-<h2>Register an account</h2>
+<h2>Create an account</h2>
 
 <%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
-	<div><%= f.label :name %><br />
-	<%= f.text_field :name %></div>
+	<div class="label_formatting"><%= f.label :name %><br />
+	<%= f.text_field :name, :placeholder => "ex. 'Jane Doe'" %></div>
 
   <div><%= f.label :email %><br />
-  <%= f.email_field :email %></div>
+  <%= f.email_field :email, :placeholder => "ex. your@emailservice.com" %></div>
 
   <div><%= f.label :password %><br />
-  <%= f.password_field :password %></div>
+  <%= f.password_field :password, :placeholder => "must be at least 8 characters" %></div>
 
   <div><%= f.label :password_confirmation %><br />
   <%= f.password_field :password_confirmation %></div>

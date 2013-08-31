@@ -1,1 +1,36 @@
 /*style css for testauth rails app - dan tashman*/
+
+label {
+margin-bottom: -15px;
+}
+
+h4 {
+	font-family: Georgia, serif;
+	color: #000;
+	font-size: 18px;
+}
+
+a {
+text-decoration: none;
+color: #000;
+	text-shadow: 0 0px 0 #ffffff;
+	}
+
+.placeholder {color: #999;}
+
+.navbar-inner {
+	background-image: linear-gradient(to bottom, #000000, #000000);
+	}
+.navbar .brand{
+	color: #FFF; !important;
+	text-shadow: 0 0px 0 #ffffff;
+	}
+
+.navbar .nav>li>a  {
+		color: #FFF; !important;
+	text-shadow: 0 0px 0 #ffffff;
+	}
+
+.navbar .nav>li:hover {
+	 	color: #333;
+	 }
